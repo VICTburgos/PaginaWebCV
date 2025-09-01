@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGOS Victoria Ethel</title>
+</head>
+
+        <p id="fecha"></p>
+
+        <script>
+            const fecha = new Date();
+            document.getElementById("fecha").textContent = 
+                `Última actualización: ${fecha.toLocaleDateString()}`;
+        </script>
+
+         <button id="temaBtn">Cambiar tema</button>
+
+        <script>
+            const btn = document.getElementById('temaBtn');
+            btn.addEventListener('click', () => {
+                document.body.classList.toggle('dark');
+            });
+        </script>
+
+
+<body>
+   <div class="container">
+    <h1>BURGOS Victoria Ethel</h1>
+    <img src="V:\CV\PaginaWebCV\yo.png" alt="" width="200" height="250">
+    <p><strong>Telefono: </strong> +54 9 1166046389</p>
+    <p><strong>Gmail:</strong> victoriaaburgoss@gmail.com</p>
+    <a href="https://github.com/VICTburgos"> Link Github</a>
+    <a href="https://www.linkedin.com/in/victoria-burgos-945214368/"> Link de linkedin</a>
+
+    <h1>Experiencia</h1>
+
+    <ul>
+        <li><strong>Vicepresidenta del CETEL</strong>(Centro de Estudiantes Técnicos Eduardo Latzina)</li>
+        <li><strong>2022 – 2024</strong></li>
+        <li>Organización y coordinación de eventos escolares como:</li>
+            <ul>
+            <li>torneos deportivos,</li>
+            <li>jornadas culturales,</li>
+            <li>actividades lúdicas y musicales</li>
+            </ul>
+        <li>Redacción de documentos institucionales (estatutos, comunicados oficiales) dirigidos a autoridades educativas y organismos gubernamentales.</li>
+    </ul>
+
+    <h2><strong>Habilidades</strong></h2>
+
+    <ul>
+        <li>Paquete Office (Word, Excel, PowerPoint)</li>
+        <li>Programación: C++, Java, SQL, HTML, React</li>
+        <ul>
+        <li> Certificación: HTML y CSS (FreeCodeCamp) </li>
+        </ul>
+    </ul>
+
+    <h2><strong>Formacion académica</strong></h2>
+
+    <ul>
+        <li>2020 - Actualmente cursando el último año</li>
+        <li>E.T 35 “Ingeniero Eduardo Latzina” Especialidad: Técnica en informática</li>
+    </ul>
+
+    <h2><strong>Idiomas</strong></h2>
+
+    <ul>
+        <li>Español – Nativo</li>
+        <li>Inglés –  B1</li>
+        <li>Portugués – B1</li>
+    </ul>
+</div>
+</body>
+</html>
